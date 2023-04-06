@@ -73,6 +73,7 @@ header .header-right-container .search-input-container button {
   border: none;
   padding: 3px;
   cursor: pointer;
+  background-color: transparent;
 }
 @media screen and (max-width: 576px) {
   header .header-right-container .search-input-container button {

@@ -40,6 +40,7 @@ header
             h1
                 color: variables.$primary-color
                 cursor: pointer
+                margin-right: 5px
 
                 @include mixin.mobile-small
                     font-size: medium
@@ -47,20 +48,21 @@ header
     .header-right-container
         display: flex
         align-items: center
+        justify-content: space-between
         gap: 1rem
         .search-input-container
             background-color: variables.$white-color
             padding: 5px
             border-radius: 5px
+            display: flex
+            align-items: center
 
             @include mixin.mobile-small
-                width: 80%
-                display: flex
-                align-items: center
+                width: 60%
                 height: 2rem
 
             input
-                flex: 1
+                width: 100%
                 background-color: transparent
                 border: none
                 outline: none
@@ -70,6 +72,7 @@ header
                 border: none
                 padding: 3px
                 cursor: pointer
+                color: variables.$black-color
                 background-color: transparent
 
                 @include mixin.mobile-small

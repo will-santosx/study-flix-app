@@ -38,6 +38,7 @@ header .header-center-title button {
 header .header-center-title button h1 {
   color: #ff4646;
   cursor: pointer;
+  margin-right: 5px;
 }
 @media screen and (max-width: 576px) {
   header .header-center-title button h1 {
@@ -47,23 +48,24 @@ header .header-center-title button h1 {
 header .header-right-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 1rem;
 }
 header .header-right-container .search-input-container {
   background-color: #e8e8e8;
   padding: 5px;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 576px) {
   header .header-right-container .search-input-container {
-    width: 80%;
-    display: flex;
-    align-items: center;
+    width: 60%;
     height: 2rem;
   }
 }
 header .header-right-container .search-input-container input {
-  flex: 1;
+  width: 100%;
   background-color: transparent;
   border: none;
   outline: none;
@@ -73,6 +75,7 @@ header .header-right-container .search-input-container button {
   border: none;
   padding: 3px;
   cursor: pointer;
+  color: #121212;
   background-color: transparent;
 }
 @media screen and (max-width: 576px) {

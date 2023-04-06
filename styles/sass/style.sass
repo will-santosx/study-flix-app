@@ -27,6 +27,10 @@ header
             color: variables.$primary-color
             font-size: large
 
+            @include mixin.mobile-small
+                display: none
+
+
     .header-center-title
         button
             background-color: transparent
@@ -37,6 +41,9 @@ header
                 color: variables.$primary-color
                 cursor: pointer
 
+                @include mixin.mobile-small
+                    font-size: medium
+
     .header-right-container
         display: flex
         align-items: center
@@ -45,6 +52,12 @@ header
             background-color: variables.$white-color
             padding: 5px
             border-radius: 5px
+
+            @include mixin.mobile-small
+                width: 80%
+                display: flex
+                align-items: center
+                height: 2rem
 
             input
                 flex: 1
@@ -58,8 +71,15 @@ header
                 padding: 3px
                 cursor: pointer
 
+                @include mixin.mobile-small
+                    padding: 5px
+                    
+
         img#profile-icon
             width: 36px
+
+            @include mixin.mobile-small
+                width: 28px
 
 main
     width: 100%
@@ -78,13 +98,22 @@ main
         flex-wrap: wrap
         gap: 20px
 
+        @include mixin.mobile-small
+            gap: 1rem
+
         .movie-container
             width: 20%
+
+            @include mixin.mobile-small
+                width: 45%
 
             .movie
                 width: 100%
                 position: relative
                 transition: 0.35s all ease-in-out
+
+                @include mixin.mobile-small
+                    margin: 2px
 
                 .movie-info
                     z-index: 2

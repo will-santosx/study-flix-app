@@ -25,6 +25,11 @@ header .header-left-logo i {
   color: #ff4646;
   font-size: large;
 }
+@media screen and (max-width: 576px) {
+  header .header-left-logo i {
+    display: none;
+  }
+}
 header .header-center-title button {
   background-color: transparent;
   appearance: none;
@@ -33,6 +38,11 @@ header .header-center-title button {
 header .header-center-title button h1 {
   color: #ff4646;
   cursor: pointer;
+}
+@media screen and (max-width: 576px) {
+  header .header-center-title button h1 {
+    font-size: medium;
+  }
 }
 header .header-right-container {
   display: flex;
@@ -43,6 +53,14 @@ header .header-right-container .search-input-container {
   background-color: #e8e8e8;
   padding: 5px;
   border-radius: 5px;
+}
+@media screen and (max-width: 576px) {
+  header .header-right-container .search-input-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    height: 2rem;
+  }
 }
 header .header-right-container .search-input-container input {
   flex: 1;
@@ -56,8 +74,18 @@ header .header-right-container .search-input-container button {
   padding: 3px;
   cursor: pointer;
 }
+@media screen and (max-width: 576px) {
+  header .header-right-container .search-input-container button {
+    padding: 5px;
+  }
+}
 header .header-right-container img#profile-icon {
   width: 36px;
+}
+@media screen and (max-width: 576px) {
+  header .header-right-container img#profile-icon {
+    width: 28px;
+  }
 }
 
 main {
@@ -77,13 +105,28 @@ main .movies {
   flex-wrap: wrap;
   gap: 20px;
 }
+@media screen and (max-width: 576px) {
+  main .movies {
+    gap: 1rem;
+  }
+}
 main .movies .movie-container {
   width: 20%;
+}
+@media screen and (max-width: 576px) {
+  main .movies .movie-container {
+    width: 45%;
+  }
 }
 main .movies .movie-container .movie {
   width: 100%;
   position: relative;
   transition: 0.35s all ease-in-out;
+}
+@media screen and (max-width: 576px) {
+  main .movies .movie-container .movie {
+    margin: 2px;
+  }
 }
 main .movies .movie-container .movie .movie-info {
   z-index: 2;

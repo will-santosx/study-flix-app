@@ -2,7 +2,7 @@ import axios from "axios"; // Axios
 
 // Variáveis da API / API Variables
 
-const API_KEY = ""; // Altere para sua chave / Change to your key
+const API_KEY = "81e21b87c0628a89b900ad9a6fe6df24";
 const API_BASE = "https://api.themoviedb.org/3";
 
 // Variables
